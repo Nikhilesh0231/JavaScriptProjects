@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Guess the Number</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>Guess the Number</h1>
+    </div>
+    <div class="main">
+      <div class="des">
+        <p>Try and guess a random number between 1 and 100.</p>
+        <p>You have 10 attempts to guess the right number.</p>
+      </div>
+
+      <div class="banner">Guess a number</div>
+
+      <form action="">
+      <input id="input" type="text" placeholder="000">
+      <button id="btn">Submit Guess</button>
+      </form>
+      <div class="guess">
+        <p>Previous Guesses: <span id="prevguess"></span></p>
+        <p>Guesses Remainig: <span  id="RemainigGuess">10</span> </p>
+        <p id="result"></p>
+      </div>
+
+    </div>
+    <div class="footer">
+      <p>Nikhilesh Tiwari <span>&copy</span>  2025</p>
+    </div>
+  </div>  
+</body>
+<script src="script.js"></script>
+</html>
