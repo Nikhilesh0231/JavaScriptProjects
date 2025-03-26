@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Light Show</title>
+  <style>
+    body{
+      margin: 0;
+      padding: 0;
+    }
+    .container{
+      background-color: #212121;
+      width: 100%;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .box-container{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 25%;
+      height: 90vh;
+      flex-wrap: wrap;
+      gap: 10px;
+      border-radius: 50%;
+    }
+    .light-box{
+      width: 40%;
+      height: 16vh;
+      margin-left: 20px;
+      /* border: 2px solid white; */
+    }
+    #id1{
+      background: red;
+    }
+    #id2{
+      background: green;
+    }
+    #id3{
+      background: yellow;
+    }
+    #id4{
+      background:white;
+    }
+    #id5{
+      background: orange;
+    }
+    #id6{
+      background:deeppink;
+    }
+    #id7{
+      background:navy;
+    }
+    #id8{
+      background:skyblue;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="box-container">
+      <div class="light-box" id="id1"></div>
+      <div class="light-box" id="id2"></div>
+      <div class="light-box" id="id3"></div>
+      <div class="light-box" id="id4"></div>
+      <div class="light-box" id="id5"></div>
+      <div class="light-box" id="id6"></div>
+      <div class="light-box" id="id7"></div>
+      <div class="light-box" id="id8"></div>
+    </div>
+  </div>  
+</body>
+<script>
+  setInterval(()=>{
+    document.getElementById("id1").style.background = "#212121"; 
+  },100)
+  setInterval(()=>{
+    document.getElementById("id1").style.background = "red"; 
+  },200)
+  setInterval(()=>{
+    document.getElementById("id2").style.background = "#212121"; 
+  },100)
+  setInterval(()=>{
+    document.getElementById("id2").style.background = "green"; 
+  },200)
+  setInterval(()=>{
+    document.getElementById("id3").style.background = "#212121"; 
+  },120)
+  setInterval(()=>{
+    document.getElementById("id3").style.background = "yellow"; 
+  },210)
+  setInterval(()=>{
+    document.getElementById("id4").style.background = "#212121"; 
+  },120)
+  setInterval(()=>{
+    document.getElementById("id4").style.background = "white"; 
+  },210)
+
+
+  setInterval(()=>{
+    document.getElementById("id5").style.background = "#212121"; 
+  },300)
+  setInterval(()=>{
+    document.getElementById("id5").style.background = "orange"; 
+  },310)
+  setInterval(()=>{
+    document.getElementById("id6").style.background = "#212121"; 
+  },150)
+  setInterval(()=>{
+    document.getElementById("id6").style.background = "deeppink"; 
+  },230)
+  setInterval(()=>{
+    document.getElementById("id7").style.background = "#212121"; 
+  },320)
+  setInterval(()=>{
+    document.getElementById("id7").style.background = "navy"; 
+  },410)
+  setInterval(()=>{
+    document.getElementById("id8").style.background = "#212121"; 
+  },310)
+  setInterval(()=>{
+    document.getElementById("id8").style.background = "skyblue"; 
+  },350)
+</script>
+</html>
